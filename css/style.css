@@ -1,0 +1,73 @@
+
+
+/*Total*/
+body {
+  background: rgba(59, 46, 190, 0.89);
+  max-width: 100%;
+  margin: auto;
+
+}
+
+
+
+
+/*Header*/
+
+
+
+.allLogos , .container {
+  text-align: center;
+}
+
+.shadow {
+  box-shadow: -4px 6px 19px #000000;
+}
+
+
+.header {
+  min-width: dev;
+  background: rgb(255, 45, 126);
+}
+
+.logo {
+  padding: 20px;
+  min-width: 5%;
+  min-height: 5%;
+  max-height: 5%;
+  max-width: 5%;
+}
+
+
+
+img.logo:hover {
+    background-color: white;
+}
+
+span.logoContainer {
+  margin-right: inherit;
+}
+
+
+/*Container*/
+
+.container {
+  background-color: white;
+  margin-top: 10%;
+}
+h2 {
+    font-family: 'Graduate', cursive;
+    font-size: 8em;
+}
+.paddingAdding {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/*Footer*/
+
+
+.footer {
+  margin-top: 10em;
+  background-color: #5044C5;
+  text-align: center;
+}
