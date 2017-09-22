@@ -3,8 +3,6 @@
 /*Total*/
 body {
   background: rgba(59, 46, 190, 0.89);
-  max-width: 100%;
-  margin: auto;
 
 }
 
@@ -23,7 +21,7 @@ div.allLogos {
   justify-content: space-between;
 }
 
-.allLogos , .container {
+.card {
   text-align: center;
 }
 
@@ -38,13 +36,10 @@ div.allLogos {
 }
 
 .logo {
-  font-size: 6em;
+  font-size: 1.70em;
   color: #311D59;
 }
 
-.logoContainer {
-  margin:   1%;
-}
 
 i#twitterLogo:hover {
   color : #1DA1F2;
@@ -62,33 +57,20 @@ i#mailLogo:hover {
   color: rgb(255, 214, 41);
 }
 
-i#githubLogo:hover, i#mailLogo:hover, i#facebookLogo:hover, i#twitterLogo:hover {
-
-}
 
 
-img.logo:hover {
-    background-color: white;
-}
-
-span.logoContainer {
-  margin-right: inherit;
-}
 
 
 /*Container*/
 
-.container {
+.card {
   background-color: white;
   margin-top: 10%;
 }
+
 h2 {
     font-family: 'Graduate', cursive;
-    font-size: 8em;
-}
-.paddingAdding {
-  padding-left: 10%;
-  padding-right: 10%;
+    font-size: 50px;
 }
 
 /*Footer*/
@@ -98,4 +80,8 @@ h2 {
   margin-top: 10em;
   background-color: #5044C5;
   text-align: center;
+}
+
+.col {
+  text-align: center
 }
