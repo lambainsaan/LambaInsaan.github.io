@@ -1,0 +1,90 @@
+/*Header*/
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  text-align: center;
+}
+
+.shadow {
+  box-shadow: -4px 6px 19px #000000;
+}
+
+
+.header {
+  min-width: dev;
+}
+
+.logo {
+  font-size: 1.70em;
+  color: #311D59;
+}
+
+
+i#twitterLogo:hover {
+  color: #1DA1F2;
+}
+
+i#facebookLogo:hover {
+  color: #45629D;
+}
+
+i#githubLogo:hover {
+  color: black;
+}
+
+i#mailLogo:hover {
+  color: rgb(255, 214, 41);
+}
+
+/*Container*/
+
+.card {
+  background-color: white;
+  margin-top: 10%;
+  width: 70%;
+  height: fit-content;
+  padding: 10px;
+  border-radius:5px;
+}
+
+.main-heading {
+  font-family: 'Graduate', cursive;
+  font-size: 50px;
+}
+
+/*Footer*/
+
+.footer {
+  margin-top: 10em;
+  background-color: #5044C5;
+  text-align: center;
+}
+
+.toolbar-social-media {
+  padding: 10px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  background: rgb(255, 45, 126);
+}
+
+.social-media-button {
+  display: flex;
+  text-align: center;
+}
+
+.content {
+  background: rgba(59, 46, 190, 0.89);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
