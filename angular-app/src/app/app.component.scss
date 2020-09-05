@@ -1,0 +1,21 @@
+
+/* Inline #5 | http://localhost:4200/ */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    /* width: 70%; */
+  }
+  
+  /* Element | http://localhost:4200/ */
+  
+  .cards-container {
+    display: flex;
+    width: 495px;
+    justify-content: space-between;
+  }
+  

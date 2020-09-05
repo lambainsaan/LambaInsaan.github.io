@@ -1,0 +1,1 @@
+s = "Python syntax highlighting"

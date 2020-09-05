@@ -1,3 +1,8 @@
+import 'prismjs';
+// typescript
+import 'prismjs/components/prism-typescript';
+// javascript
+import 'prismjs/components/prism-javascript';
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 

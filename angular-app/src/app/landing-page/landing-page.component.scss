@@ -44,7 +44,6 @@ i#mailLogo:hover {
 .card {
   background-color: white;
   margin-top: 10%;
-  width: 70%;
   height: fit-content;
   padding: 10px;
   border-radius:5px;
@@ -87,4 +86,25 @@ i#mailLogo:hover {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+
+/* Inline #5 | http://localhost:4200/ */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  /* width: 70%; */
+}
+
+/* Element | http://localhost:4200/ */
+
+.cards-container {
+  display: flex;
+  width: 495px;
+  justify-content: space-between;
 }
