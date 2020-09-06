@@ -1,3 +1,4 @@
+@import "variables";
 body,
 html {
   height: 100%
@@ -10,4 +11,70 @@ body {
 app-root {
   display: block;
   height: 100%;
+}
+
+
+
+markdown h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3em;
+  font-weight: normal;
+}
+
+markdown h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3em;
+  font-weight: lighter;
+  font-size: 2em;
+}
+
+markdown p {
+  font-family: "Roboto Slab", serif;
+}
+
+
+markdown li {
+  font-family: "Roboto Slab", serif;
+  font-size: larger;
+}
+
+markdown blockquote {
+  border-left: 2px;
+  color: grey;
+  border-style: solid;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  padding-left: 2em;
+}
+
+
+
+markdown p {
+  font-size: larger;
+}
+
+
+markdown h1:nth-of-type(1) {
+  margin-left: -1em;
+}
+
+markdown code {
+  background: #88868363;
+  padding: 0.4em;
+  border-radius: 4px;
+}
+
+
+@media (max-width: $breakpoint-phone) {
+
+  markdown h1:nth-of-type(1) {
+    margin: unset;
+  }
+
+  markdown blockquote {
+    padding-left: 1em;
+    margin: unset;
+  }
+
 }
