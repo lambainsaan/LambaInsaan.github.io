@@ -7,6 +7,11 @@ html,
 body {
   height: 100%;
 }
+
+html {
+  @apply text-base;
+}
+
 p {
   @apply mt-2;
 }
@@ -327,6 +332,10 @@ body {
     background: theme-get("card-background");
     color: theme-get("secondary");
   }
+}
+
+code {
+  font-family: monospace;
 }
 
 button {
