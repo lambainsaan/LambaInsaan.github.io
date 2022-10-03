@@ -1,0 +1,15 @@
+
+.playing {
+  height: 20px;
+  // animation: swapimg 1s infinite alternate;
+  background-image: url('/assets/mute.svg');
+}
+
+.clickable-button {
+  border-radius: 50%;
+  background: gold;
+  height: 25px;
+  width: 25px;
+  @apply p-1;
+  @apply ml-2;
+}

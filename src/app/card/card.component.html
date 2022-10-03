@@ -1,0 +1,19 @@
+<mat-card class="card" [ngClass]="{'image-card': image !== undefined}">
+  <div class="card-container">
+    <div class="image-container">
+      <div *ngIf="image !== undefined" class="image">
+      </div>
+    </div>
+    <div>
+      {{heading}}
+    </div>
+    <div class="card-content">
+      {{content}}
+    </div>
+    <div *ngFor="let button of buttons" class="button-container">
+      <button (click)="routeTo(button.routeTo)">
+          {{button.content}}
+      </button>
+    </div>
+  </div>
+</mat-card>

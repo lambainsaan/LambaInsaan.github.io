@@ -1,0 +1,45 @@
+<div class="container">
+  <div color="primary" class="main-toolbar">
+    <span>Audio Player</span>
+  </div>
+  <div class="content">
+      <div class="logo">
+        <div>music_note</div>
+        <div>Audio Player</div>
+    </div>
+    <div color="primary">
+      <h3 mat-subheader>Songs</h3>
+      <div *ngFor="let file of files; let i = index" (click)="openFile(file, i)">
+        <div color="primary" mat-list-icon>music_note</div>
+        <h4 mat-line>{{ file.name }}</h4>
+        <h5 mat-line>by {{ file.artist }}</h5>
+        <div color="primary" *ngIf="currentFile.index === i && !state?.error">volume_up</div>
+        <h6 *ngIf="currentFile.index === i && state?.error">ERROR</h6>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <div class="media-footer">
+    <div color="primary">
+      <div>
+         {{ state?.readableCurrentTime }}
+         <div class="time-slider" min="0" ></div>
+         {{ state?.readableDuration }}
+      </div>
+      <div class="media-action-bar">
+        <button mat-button [disabled]="isFirstPlaying()" (click)="previous()">
+          <div mat-list-icon>skip_previous</div>
+        </button>
+        <button mat-button (click)="play()" [disabled]="state?.error" *ngIf="!state?.playing">
+          <div mat-list-icon>play_circle_filled</div>
+        </button>
+        <button mat-button (click)="pause()" *ngIf="state?.playing">
+          <div mat-list-icon>pause</div>
+        </button>
+        <button  mat-button [disabled]="isLastPlaying()" (click)="next()">
+          <div mat-list-icon>skip_next</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

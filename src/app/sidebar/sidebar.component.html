@@ -1,0 +1,28 @@
+<div class="side-nav-bar flex md:flex-col items-center">
+  <div class="side-nav-avatar-1 h-12 w-12 md:h-28 md:w-28 hidden md:flex">
+    <div class="side-nav-avatar-2 h-full w-full">
+      <div class="side-nav-avatar-3 h-full w-full">
+        <img src="assets/avatar-normal.svg">
+      </div>
+    </div>
+  </div>
+  <div class="side-nav-nav-area flex md:flex-col justify-between w-full md:mt-8">
+    <ng-container *ngFor="let navItem of navItems">
+      <div class="side-nav-bar-nav-items" (click)="goToPage(navItem.route)">
+        <ng-container *ngIf="navItem.enabled; else elseTemplate">
+          <div class="side-nav-bar-nav-item current-item h-fit">
+            <div class="side-nav-bar-nav-item current-item-container h-fit">
+              {{navItem.title}}
+            </div>
+          </div>
+        </ng-container>
+        <ng-template #elseTemplate>
+          <div class="side-nav-bar-nav-item non-current-item h-fit">
+            {{navItem.title}}
+          </div>
+        </ng-template>
+      </div>
+    </ng-container>
+
+  </div>
+</div>

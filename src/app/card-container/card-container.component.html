@@ -1,0 +1,9 @@
+<div class="cards-container">
+  <app-card
+    *ngFor="let card of cards"
+    [heading]="card.heading"
+    [content]="card.content"
+    [buttons]="card.buttons"
+    class="card-container"
+  ></app-card>
+</div>

@@ -1,1 +1,397 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./themes";
+@import "./utils";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  height: 100%;
+}
+p {
+  @apply mt-2;
+}
+
+h1 {
+  @apply md:text-6xl;
+  @apply text-3xl;
+  @apply mt-2;
+  @apply mb-2;
+}
+h2 {
+  @apply md:text-4xl;
+  @apply text-2xl;
+  @apply mt-2;
+  @apply mb-2;
+}
+
+hr {
+  @apply mt-4;
+  @apply mb-4;
+}
+h3 {
+  @apply md:text-3xl;
+  @apply text-xl;
+  @apply mt-1;
+  @apply mb-1;
+}
+blockquote {
+  margin: unset;
+  padding-left: 21px;
+  border-left: #e3e1e1 2px solid;
+  color: grey;
+}
+
+html {
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  // font-size: 24px;
+}
+
+body {
+  margin: 0;
+  font-family: "Patrick Hand", cursive;
+}
+
+body:not(.dark-mode-preloading) {
+  transition: all 0.3s linear;
+}
+
+.side-nav-avatar-1 {
+  border-radius: 50%;
+}
+
+.top-nav-bar {
+  @extend .padding-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  @apply h-fit;
+
+  @include themeApplyOnParent {
+    box-shadow: theme-get("shadow");
+  }
+}
+
+.top-nav-bar-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.mat-slide-toggle-thumb {
+  border: 2px solid map-deep-get($themes, "darkTheme", "primary");
+}
+
+.mat-slide-toggle-bar {
+  background: map-deep-get($themes, "lightTheme", "primary");
+  border: 2px solid map-deep-get($themes, "darkTheme", "primary");
+  width: 34px;
+  height: 14px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.mat-slide-toggle-thumb-container {
+  top: -2px !important;
+  left: -2px !important;
+}
+.mat-slide-toggle-bar {
+  height: 20px !important;
+  border-radius: 100px !important;
+}
+
+.content-block-child {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  height: 988px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.side-nav-bar-nav-item {
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.side-nav-bar-nav-item {
+  @apply text-xl;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+a {
+  color: blue;
+}
+
+a:visited {
+  color: darkblue;
+}
+
+.current-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  width: fit-content;
+
+  @include themeApplyOnParent() {
+    border-bottom: 4px dashed theme-get("accent");
+  }
+}
+
+.side-nav-bar-nav-items {
+  /* Inside auto layout */
+  display: flex;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-nav-bar-nav-items-current-item-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.content-block-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  height: 988px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.padding-content {
+  @apply p-2;
+  @apply md:p-4;
+}
+
+.content-block {
+  @extend .padding-content;
+  flex-grow: 1;
+}
+
+.content-block-child {
+  display: flex;
+  align-items: flex-start;
+  height: 988px;
+
+  /* White */
+  /* Large Frame */
+  // box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.06);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  /* width: 1728px; */
+  /* height: 1117px; */
+  left: 0px;
+  top: 0px;
+}
+
+.page-wrapper {
+  width: -webkit-fill-available;
+}
+
+.top-nav-bar {
+  width: -webkit-fill-available;
+}
+
+.content-block-wrapper {
+  width: -webkit-fill-available;
+}
+
+.side-nav-avatar-1 {
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  padding: 0px 5px;
+  justify-content: center;
+}
+
+.side-nav-avatar-2 {
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.mode-switcher {
+  /* display: flex; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  /* width: 112px; */
+  /* height: 80px; */
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.non-current-item:hover {
+  border-bottom: 4px dashed #e30b5c;
+  cursor: pointer;
+}
+
+input {
+  box-sizing: border-box;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 14px;
+  width: 468px;
+  height: 48px;
+  border: 3px solid #333333;
+  border-radius: 8px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  font-size: x-large;
+}
+
+body {
+  @include theme() {
+    color: theme-get("secondary");
+    background-color: theme-get("primary");
+    // box-shadow: theme-get("shado w");
+  }
+}
+
+.top-nav-bar {
+  @include themeApplyOnParent() {
+    background: theme-get("bg-color-top-nav-bar");
+  }
+}
+
+.top-nav-bar {
+  @include themeApplyOnParent() {
+    background: theme-get("bg-color-top-nav-bar");
+  }
+}
+
+.side-nav-avatar-1 {
+  @include themeApplyOnParent() {
+    background-color: theme-get("bg-color-top-nav-bar");
+    border-radius: 100%;
+  }
+}
+
+.card {
+  border-radius: 20px !important;
+  @include themeApplyOnParent() {
+    border: 3px solid theme-get("card-border");
+    background: theme-get("card-background");
+    color: theme-get("secondary");
+  }
+}
+
+button {
+  border: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 18px;
+  gap: 6px;
+
+  /* Black */
+
+  background: #333333;
+  border-radius: 8px;
+
+  // width: 76px;
+  // height: 24px;
+
+  font-family: "Patrick Hand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  /* identical to box height, or 133% */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.card-content {
+  width: 347px;
+  height: 130px;
+  font-family: "Patrick Hand";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+
+  /* Black */
+
+  color: #333333;
+
+  /* Inside auto layout */
+
+  flex: none;
+  flex-grow: 0;
+}
+
+.button-container {
+  width: 100%;
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+blockquote {
+  @apply mt-2;
+  @apply mb-2;
+}

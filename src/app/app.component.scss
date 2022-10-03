@@ -1,0 +1,66 @@
+.top-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 1728px; */
+
+/* White */
+  background: #FFFFFF;
+/* Soft Shadow */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+/* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.top-nav-bar-heading {
+  /* width: 167px; */
+  /* height: 46px; */
+
+/* XXX Large */
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+/* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+/* Black */
+  color: #333333;
+
+
+/* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.mat-slide-toggle-thumb {
+  box-sizing: border-box;
+  /* position: absolute; */
+  /* left: 3.85%; */
+  /* right: 38.46%; */
+  /* top: 3.12%; */
+  /* bottom: 3.12%; */
+
+/* White */
+  background: #FFFFFF;
+/* Black */
+  border: 2px solid #333333;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 100px;
+}
+
+.mat-slide-toggle-bar {/* White */
+  background: #FFFFFF;
+/* Black */
+  border: 2px solid #333333;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 100px;
+  /* box-sizing: border-box; */
+}
