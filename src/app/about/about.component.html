@@ -81,12 +81,14 @@
 </markdown>
 <div class="flex">
   There you go,
-  <ng-container *ngIf="!playing; else elseTemplate">
-    <img (click)="play()" src="assets/volume-up.svg" alt="drawing"  width="25" height="25" class="clickable-button" />
-  </ng-container>
-  <ng-template #elseTemplate>
-    <img ngelse (click)="pause()" src="assets/mute.svg" alt="drawing"  width="25" height="25" class="clickable-button" />
-  </ng-template>
+  <div class="cursor-pointer">
+    <ng-container *ngIf="!playing; else elseTemplate">
+      <img (click)="play()" src="assets/volume-up.svg" alt="drawing"  width="25" height="25" class="clickable-button" />
+    </ng-container>
+    <ng-template #elseTemplate>
+      <img ngelse (click)="pause()" src="assets/mute.svg" alt="drawing"  width="25" height="25" class="clickable-button" />
+    </ng-template>
+  </div>
 </div>
 <markdown ngPreserveWhitespaces>
   > Why LambaInsaan?
@@ -96,3 +98,9 @@
 
 <div id="lambainsaan-meaning-tweet"></div>
 
+
+<markdown ngPreserveWhitespaces>
+  ---
+
+  Watchout this space for podcasts, newsletters, and blogs. To be launched pretty soon. :)
+</markdown>

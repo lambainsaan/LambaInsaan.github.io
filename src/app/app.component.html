@@ -18,10 +18,13 @@
   <div class="content-block-wrapper">
     <div class="content-block">
       <div class="content-block-child md:flex flex-col md:flex-row">
-        <app-sidebar class="w-full md:w-96 h-full"></app-sidebar>
+        <app-sidebar class="w-full md:w-40 h-full"></app-sidebar>
 
         <div class="content-block ">
           <router-outlet *ngIf="!markdown"></router-outlet>
+          <div class="mt-8 flex justify-center">
+            Made with ❤️ by Rhitik.
+          </div>
       </div>
       </div>
     </div>
